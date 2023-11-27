@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Bootstrap link css cdn v5.3 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Bootstrap link script cdn v5.3 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <style>
+        header {
+            margin-bottom: 20px;
+        }
+
+        main {
+            margin-bottom: 20px;
+        }
+
+        #card {
+            margin-bottom: 40px;
+        }
+
+        #card-1,
+        #card-2,
+        #card-3 {
+            transition: .3s;
+            cursor: pointer;
+        }
+
+        #contact {
+            margin-bottom: 100px;
+        }
+
+        footer {
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body style="background-color: #222121; color: white;">
+    <header>
+        <!-- place navbar here -->
+        <nav style="padding: 20px; justify-content: space-between; display: flex; align-items: center;" class="navbar navbar-expand-lg navbar-dark bg-dark shadow">
+            <div class="container">
+                <a style="margin-right: 120px;" class="navbar-brand" href="#">roadmapsheet.com</a>
+    
+                <button class="navbar-toggler" type="button" data-bs-toogle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+                aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+    
+                <div class="collapse navbar-collapse" id="#navbarNavDropdown">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+    
+                        <li class="nav-item">
+                            <a  class="nav-link" href="#contact">Contact</a>
+                        </li>
+    
+                        <li class="nav-item dropdown">
+                            <a  class="nav-link dropdown-toggle" href="#" id="#navbarNavDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Course
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarNavDropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Front End Developer</a></li>
+                                <li><a class="dropdown-item" href="#">Back End Developer</a></li>
+                                <li><a class="dropdown-item" href="#">UI / UX Designer</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+    
+    
+            </div>
+        </nav>
+      </header>
+    
+      <main>
+        <div class="p-5 mb-4">
+            <div class="container-fluid py-5">
+                <center>
+                    <h1 class="display-5 fw-bold">— Programming Bootcamp —</h1>
+                    <p class="col-md-8 fs-4">Kami menyadiakan beberapa course bootcamp untuk roadmap programming. Terdapat beberapa bidang programming yang tersedia di bawah!</p>
+                    <div id="btn-confirm">
+                        <button class="btn btn-outline-light btn-lg" type="button" onclick="window.location.href='#card';">Get Started</button>
+                    </div>
+                </center>
+    
+                
+            </div>
+        </div>
+    
+        <section id="card">
+            <div class="container">
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col mb-5" id="card-1">
+                        <div class="card h-100 text-center" style="border: 3px solid whitesmoke; border-radius: 20px; box-shadow: 4px 2px 4px 4px rgba(0, 0, 0, 0.342);">
+                            <img style="border-top-left-radius: 18px; border-top-right-radius: 18px;" src="https://img.freepik.com/free-vector/female-programmer-doing-her-job-office_23-2148274929.jpg" class="card-img-top" alt="...">
+                            <div class="card-body bg-dark text-white">
+                                <h5 class="card-title">Front End Developer</h5>
+                                <p class="card-text">Mendapat roadmap untuk menjadi front end developer. Dan mendapat materi penting bagi front end developer. <br> <p class="text-lg-start" style="margin-right: 8px;"><b>Materi : </b></p><ul class="text-lg-start" style="align-items: center;">
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>JavaScript</li>
+                                    <li>Bootstrap</li>
+                                    <li>Tailwind CSS</li>
+                                    <li>Scss / Sass</li>
+                                </ul></p>
+                                <button class="btn btn-outline-light">Join Course</button>
+                                <button class="btn btn-outline-light">Info Course</button>
+                            </div>
+                            <div style="border-bottom-left-radius: 18px; border-bottom-right-radius: 18px;" class="card-footer bg-dark">
+                                <small class="text-white-50">Join Fee : € 42.90</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5" id="card-2">
+                        <div class="card h-100 text-center" style="border: 3px solid whitesmoke; border-radius: 20px; box-shadow: 4px 2px 4px 4px rgba(0, 0, 0, 0.342);">
+                            <img style="border-top-left-radius: 18px; border-top-right-radius: 18px;" src="https://img.freepik.com/free-vector/programmers-concept-with-flat-design_23-2147850221.jpg?w=826&t=st=1701064586~exp=1701065186~hmac=41a6cee7c7af77b3ab2829447ee59b310a2e7a1ce21ed9a76a16971f6ad4c20a" class="card-img-top" alt="...">
+                            <div class="card-body bg-dark text-white">
+                                <h5 class="card-title">UI / UX Designer</h5>
+                                <p class="card-text">Mendapat roadmap untuk menjadi UI/UX Designer. Dan mendapat materi penting mengenai dunia design digital. <br> <p class="text-lg-start" style="margin-right: 8px;"><b>Materi : </b></p><ul class="text-lg-start" style="align-items: center;">
+                                    <li>Basic Figma</li>
+                                    <li>CSS</li>
+                                    <li>Scss / Sass</li>
+                                    <li>Bulma CSS</li>
+                                    <li>Tailwind CSS</li>
+                                    <li>Advance Design Materi</li>
+                                </ul></p>
+                                <button class="btn btn-outline-light">Join Course</button>
+                                <button class="btn btn-outline-light">Info Course</button>
+                            </div>
+                            <div style="border-bottom-left-radius: 18px; border-bottom-right-radius: 18px;" class="card-footer bg-dark">
+                                <small class="text-white-50">Join Fee : € 128.15</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5" id="card-3">
+                        <div class="card h-100 text-center" style="border: 3px solid whitesmoke; border-radius: 20px; box-shadow: 4px 2px 4px 4px rgba(0, 0, 0, 0.342);">
+                            <img style="border-top-left-radius: 18px; border-top-right-radius: 18px;" src="https://img.freepik.com/free-vector/hand-drawn-web-developers-working_23-2148819605.jpg?w=996&t=st=1700470819~exp=1700471419~hmac=36e94545dfde2a9343cfe6c170ac089de63fa0e726033d635ac0d1783ad01ac0
+                            " class="card-img-top" alt="...">
+                            <div class="card-body bg-dark text-white">
+                                <h5 class="card-title">Back End Developer</h5>
+                                <p class="card-text">Mendapat roadmap untuk menjadi back end developer. Dan mendapat materi penting bagi back end developer, juga mendapat fundimental serta pemahaman logika dan algoritma. <br> <p class="text-lg-start" style="margin-right: 8px;"><b>Materi : </b></p><ul class="text-lg-start" style="align-items: center;">
+                                    <li>Pascal</li>
+                                    <li>Java</li>
+                                    <li>JavaScript</li>
+                                    <li>ReactJS/Laravel/NextJS</li>
+                                    <li>A.P.I</li>
+                                    <li>Payment Gateway Implementation</li>
+                                </ul></p>
+                                <button class="btn btn-outline-light">Join Course</button>
+                                <button class="btn btn-outline-light">Info Course</button>
+                            </div>
+                            <div style="border-bottom-left-radius: 18px; border-bottom-right-radius: 18px;" class="card-footer bg-dark">
+                                <small class="text-white-50">Join Fee : € 58.50</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+        </section>
+    
+        <section id="contact">
+            <div class="container" style="border: 2px solid white; padding: 30px; border-top-right-radius: 50px; border-bottom-left-radius: 50px;">
+                <div class="mb-3 row text-center">
+                    <h1>Gimme Feedback</h1>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-md-6">
+                    <form>
+                        <div class="mb-3">
+                        <label for="exampleInputEmail" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="exampleInputEmail" aria-describedby="emailHelp">
+                     </div>
+        
+                     <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Massage</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                     </div>
+        
+                     <div class="mb-3 form-check form-switch">
+                        <input class="form-check-input" type="checkbox" role="switch" id="flexSwicthCheckDefault">
+                        <label class="form-check-label" for="flexSwicthCheckDefault">already accept term & services.</label>
+                     </div>
+        
+                        <div class="mb-3">
+                            <button type="submit" class="btn btn-outline-light">Send</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        </section>
+    
+    
+      </main>
+      <!-- Remove the container if you want to extend the Footer to full width. -->
+    
+    
+        <!-- Footer -->
+        <footer
+                class="text-center text-lg-start text-white"
+                style="background-color: #1c2331"
+                >
+          <!-- Section: Social media -->
+          <section
+                   class="d-flex justify-content-between p-2"
+                   style="background-color: #6351ce"
+                   >
+            <!-- Left -->
+            <!-- Left -->
+      
+            <!-- Right -->
+            <div>
+              <a href="" class="text-white me-4">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="" class="text-white me-4">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="" class="text-white me-4">
+                <i class="fab fa-google"></i>
+              </a>
+              <a href="" class="text-white me-4">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="" class="text-white me-4">
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a href="" class="text-white me-4">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+            <!-- Right -->
+          </section>
+          <!-- Section: Social media -->
+      
+          <!-- Section: Links  -->
+          <section class="">
+            <div class="container text-center text-md-start mt-5">
+              <!-- Grid row -->
+              <div class="row mt-3">
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                  <!-- Content -->
+                  <h6 class="text-uppercase fw-bold">roadmapsheet.com</h6>
+                  <hr
+                      class="mb-4 mt-0 d-inline-block mx-auto"
+                      style="width: 60px; background-color: #7c4dff; height: 2px"
+                      />
+                  <p>
+                    Here you can join a programming course with many benefits, and cheapest roadmap platform in the world!
+                  </p>
+                </div>
+                <!-- Grid column -->
+      
+                <!-- Grid column -->
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                  <!-- Links -->
+                  <h6 class="text-uppercase fw-bold">Products</h6>
+                  <hr
+                      class="mb-4 mt-0 d-inline-block mx-auto"
+                      style="width: 60px; background-color: #7c4dff; height: 2px"
+                      />
+                  <p>
+                    <a href="#!" class="text-white">MDBootstrap</a>
+                  </p>
+                  <p>
+                    <a href="#!" class="text-white">MDWordPress</a>
+                  </p>
+                  <p>
+                    <a href="#!" class="text-white">BrandFlow</a>
+                  </p>
+                  <p>
+                    <a href="#!" class="text-white">Bootstrap Angular</a>
+                  </p>
+                </div>
+                <!-- Grid column -->
+      
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                  <!-- Links -->
+                  <h6 class="text-uppercase fw-bold">Useful links</h6>
+                  <hr
+                      class="mb-4 mt-0 d-inline-block mx-auto"
+                      style="width: 60px; background-color: #7c4dff; height: 2px"
+                      />
+                  <p>
+                    <a href="#!" class="text-white">Your Account</a>
+                  </p>
+                  <p>
+                    <a href="#!" class="text-white">Become an Affiliate</a>
+                  </p>
+                  <p>
+                    <a href="#!" class="text-white">Shipping Rates</a>
+                  </p>
+                  <p>
+                    <a href="#!" class="text-white">Help</a>
+                  </p>
+                </div>
+                <!-- Grid column -->
+      
+                <!-- Grid column -->
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                  <!-- Links -->
+                  <h6 class="text-uppercase fw-bold">Contact</h6>
+                  <hr
+                      class="mb-4 mt-0 d-inline-block mx-auto"
+                      style="width: 60px; background-color: #7c4dff; height: 2px"
+                      />
+                  <p><i class="fas fa-home mr-3"></i> New York, NY 10012, US</p>
+                  <p><i class="fas fa-envelope mr-3"></i> info@example.com</p>
+                  <p><i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
+                  <p><i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+                </div>
+                <!-- Grid column -->
+              </div>
+              <!-- Grid row -->
+            </div>
+          </section>
+          <!-- Section: Links  -->
+      
+          <!-- Copyright -->
+          <div
+               class="text-center p-3"
+               style="background-color: rgba(0, 0, 0, 0.2)"
+               >
+            © 2020 Copyright:
+            <a class="text-white" href="https://mdbootstrap.com/"
+               >MDBootstrap.com</a
+              >
+          </div>
+          <!-- Copyright -->
+        </footer>
+        <!-- Footer -->
+      
+      </div>
+      <!-- End of .container -->
+      <!-- Bootstrap JavaScript Libraries -->
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+      </script>
+</body>
+</html>
